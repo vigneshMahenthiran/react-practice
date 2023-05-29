@@ -9,11 +9,15 @@ import UserGreetings from './components/UserGreeting';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
+import Form from './components/Form';
+import FragementDemo from './components/FragmentDemo';
 
 function App() {
   return (
     <div className="App">
-      <Inline/>
+      <FragementDemo/>
+      {/* <Form/> */}
+      {/* <Inline/> */}
       {/* <Stylesheet/> */}
       {/* <NameList/> */}
       {/* <Greet name= "vignesh">
