@@ -11,11 +11,32 @@ import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
 import Form from './components/Form';
 import FragementDemo from './components/FragmentDemo';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import Input from './components/Input';
+import FocusInput from './components/FocusInput';
+import FRParent from './components/FRParent';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <FragementDemo/>
+      <ErrorBoundary>
+        <Hero name="batman" />
+        <Hero name="joker" />
+      </ErrorBoundary>
+      {/* <Hero name="batman" />
+      <Hero name="joker" /> */}
+
+      {/* <PortalDemo/> */}
+      {/* <FRParent/> */}
+      {/* <FocusInput/> */}
+      {/* <Input/> */}
+      {/* <RefsDemo/> */}
+      {/* <ParentComp/> */}
+      {/* <FragementDemo/> */}
       {/* <Form/> */}
       {/* <Inline/> */}
       {/* <Stylesheet/> */}
@@ -24,7 +45,7 @@ function App() {
         <p>this is children props</p>
       </Greet>
       <Greet name= "ak"/>
-      <Welcome name ="ak"/> */} 
+      <Welcome name ="ak"/> */}
       {/* <Message/> */}
       {/* <Counter/> */}
       {/* <ParentComponent/> */}
